@@ -129,8 +129,8 @@ module.exports = function(
       console.error(`\`${command} ${args.join(' ')}\` failed`);
       return;
     }
-    */
   }
+  */
 
   // Display the most elegant way to cd.
   // This needs to handle an undefined originalDirectory for
