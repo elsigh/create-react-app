@@ -116,6 +116,7 @@ module.exports = function(
     fs.unlinkSync(templateDependenciesPath);
   }
 
+  /*
   // Install react and react-dom for backward compatibility with old CRA cli
   // which doesn't install react and react-dom along with react-scripts
   // or template is presetend (via --internal-testing-template)
@@ -128,6 +129,7 @@ module.exports = function(
       console.error(`\`${command} ${args.join(' ')}\` failed`);
       return;
     }
+    */
   }
 
   // Display the most elegant way to cd.
@@ -144,7 +146,7 @@ module.exports = function(
   const displayedCommand = useYarn ? 'yarn' : 'npm';
 
   console.log();
-  console.log(`Success! Created ${appName} at ${appPath}`);
+  console.log(`Success! Created the quip-app ${appName} at ${appPath}`);
   console.log('Inside that directory, you can run several commands:');
   console.log();
   console.log(chalk.cyan(`  ${displayedCommand} start`));
